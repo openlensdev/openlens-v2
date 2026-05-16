@@ -9,16 +9,23 @@ import {
   Star,
   Radio,
   Search,
-  FileText,
   Share2,
-  Mail,
-  Users,
-  PenTool,
-  Video,
-  Layout,
+  MousePointerClick,
+  BadgeCheck,
+  MonitorCog,
+  Globe2,
   Smartphone,
-  Zap,
+  PlugZap,
+  Layers3,
+  LifeBuoy,
+  Film,
+  Video,
+  PenTool,
+  MessageSquareQuote,
   BarChart3,
+  ShieldAlert,
+  Users,
+  Newspaper,
   Target,
 } from "lucide-react";
 
@@ -27,79 +34,118 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     id: 1,
-    title: "Core Digital Marketing",
-    desc: "Full-funnel acquisition that compounds: search, social, content, and paid.",
-    icon: Megaphone,
+    title: "Lead Generation & Performance Marketing",
+    desc: "High-intent campaigns built to capture qualified leads and turn ad spend into measurable growth.",
+    icon: TrendingUp,
     color: "from-violet-600 to-fuchsia-600",
     items: [
-      { name: "SEO", detail: "on-page, off-page, technical, local, audits", icon: Search },
-      { name: "Content Marketing", detail: "blogs, case studies, eBooks, infographics", icon: FileText },
-      { name: "Social Media Marketing", detail: "Facebook, Instagram, LinkedIn, X, YouTube, WhatsApp, Pinterest, Reddit, Telegram, Quora, Discord, GMB", icon: Share2 },
-      { name: "Paid Advertising", detail: "Google Ads, PPC, CPC, display, app downloads", icon: Target },
-      { name: "Email Marketing", detail: "automation, drip campaigns, newsletters", icon: Mail },
-      { name: "Influencer Marketing", detail: "Instagram/TikTok/Shorts collabs, niche creators", icon: Users },
+      { name: "Meta Ads", detail: "campaign setup, creative testing, retargeting", icon: Share2 },
+      { name: "Targeted Advertising", detail: "audience segmentation and conversion focused campaigns", icon: Target },
+      { name: "LinkedIn Lead Generation Ads", detail: "B2B targeting, forms, outreach funnels", icon: Users },
+      { name: "PPC", detail: "pay-per-click campaigns optimized for ROI", icon: MousePointerClick },
     ],
   },
   {
     id: 2,
-    title: "Branding & Creative",
-    desc: "Distinctive identities and design systems that earn attention and trust.",
-    icon: Palette,
-    color: "from-pink-600 to-orange-500",
+    title: "Social Media Marketing",
+    desc: "Platform-specific social campaigns that build visibility, engagement, and community trust.",
+    icon: Share2,
+    color: "from-blue-600 to-cyan-500",
     items: [
-      { name: "Brand Strategy", detail: "positioning, messaging, storytelling", icon: PenTool },
-      { name: "Logo & Graphic Design", detail: "Logo Design & Graphic Design", icon: Palette },
-      { name: "Video Production", detail: "AI video, film shooting, documentaries, reels", icon: Video },
-      { name: "UI/UX Design", detail: "website/app interfaces, premium aesthetics", icon: Layout },
+      { name: "Facebook Ads", detail: "awareness, traffic, leads, and retargeting", icon: Share2 },
+      { name: "Instagram Ads", detail: "reels, stories, feed ads, creator-led growth", icon: Video },
+      { name: "LinkedIn Ads", detail: "B2B campaigns for decision makers", icon: Users },
+      { name: "Twitter Ads", detail: "brand visibility and campaign amplification", icon: Share2 },
+      { name: "YouTube SEO & Marketing", detail: "video optimization, ads, channel growth", icon: Video },
     ],
   },
   {
     id: 3,
-    title: "Web & App Development",
-    desc: "Blazing-fast, scalable products built with modern architecture.",
-    icon: Code2,
-    color: "from-blue-600 to-cyan-500",
+    title: "Google Ads",
+    desc: "Search, display, app, and lead generation campaigns tuned for high-quality conversions.",
+    icon: Megaphone,
+    color: "from-emerald-600 to-teal-500",
     items: [
-      { name: "Full-Stack Development", detail: "frontend + backend", icon: Code2 },
-      { name: "App Development", detail: "iOS, Android, hybrid", icon: Smartphone },
-      { name: "API Integrations", detail: "third-party tools, payment gateways, CRM, automation", icon: Zap },
-      { name: "Website Optimization", detail: "speed, security, maintenance", icon: TrendingUp },
+      { name: "PPC", detail: "campaign structure, bidding, keyword strategy", icon: MousePointerClick },
+      { name: "CPC", detail: "cost-per-click optimization and budget control", icon: BarChart3 },
+      { name: "Lead Generation", detail: "forms, calls, landing pages, conversion tracking", icon: Users },
+      { name: "Display Ads", detail: "visual remarketing and awareness campaigns", icon: MonitorCog },
+      { name: "Search Ads", detail: "intent-based search campaign management", icon: Search },
+      { name: "App Downloading Ads", detail: "install campaigns for Android and iOS apps", icon: Smartphone },
     ],
   },
   {
     id: 4,
-    title: "Advanced Growth Services",
-    desc: "Experimentation, automation, and data to multiply what works.",
-    icon: TrendingUp,
-    color: "from-emerald-600 to-teal-500",
+    title: "Branding",
+    desc: "Creative identity, visual communication, and content production that makes your brand memorable.",
+    icon: Palette,
+    color: "from-pink-600 to-orange-500",
     items: [
-      { name: "Conversion Rate Optimization", detail: "A/B testing, landing page optimization", icon: Target },
-      { name: "Marketing Automation", detail: "HubSpot, Mailchimp, CRM workflows", icon: Zap },
-      { name: "Analytics & Reporting", detail: "Google Analytics, dashboards, ROI tracking", icon: BarChart3 },
-      { name: "Market Research", detail: "competitor analysis, audience insights", icon: Search },
+      { name: "Logo Design", detail: "brand mark, typography, and identity direction", icon: PenTool },
+      { name: "Poster Design", detail: "campaign posters, event creatives, print-ready assets", icon: Palette },
+      { name: "AI Video Design", detail: "AI-assisted video concepts and motion content", icon: Video },
+      { name: "Film Shooting", detail: "brand films, product shoots, campaign videos", icon: Film },
+      { name: "Documentary Shoot", detail: "story-led production and long-form content", icon: Video },
+      { name: "Graphic Design", detail: "social creatives, ads, brochures, brand assets", icon: Layers3 },
     ],
   },
   {
     id: 5,
-    title: "Review and Growth Services",
-    desc: "Turn real customer voice into acquisition and retention.",
-    icon: Star,
-    color: "from-amber-500 to-orange-600",
+    title: "SEO",
+    desc: "Search visibility systems covering technical health, content structure, local presence, and authority.",
+    icon: Search,
+    color: "from-lime-600 to-emerald-500",
     items: [
-      { name: "Product Feedback", detail: "Your company product feedback", icon: Star },
+      { name: "On Page SEO", detail: "content optimization, meta tags, internal linking", icon: Search },
+      { name: "Off Page SEO", detail: "authority building, backlinks, citations", icon: Globe2 },
+      { name: "SEO Audit", detail: "technical, content, and ranking opportunity audit", icon: BadgeCheck },
+      { name: "Local SEO", detail: "Google Business Profile, local keywords, maps visibility", icon: Target },
+      { name: "Technical SEO", detail: "speed, indexing, schema, crawl fixes", icon: MonitorCog },
     ],
   },
   {
     id: 6,
+    title: "Review and Services",
+    desc: "Customer feedback systems that improve credibility, trust, product quality, and sales conversion.",
+    icon: Star,
+    color: "from-amber-500 to-orange-600",
+    items: [
+      { name: "Customer Feedback", detail: "gathering, managing, and publishing customer feedback", icon: MessageSquareQuote },
+      { name: "Ratings & Testimonials", detail: "credibility assets that increase sales confidence", icon: Star },
+      { name: "Verified Review Acquisition", detail: "collecting feedback from actual users for authenticity", icon: BadgeCheck },
+      { name: "Monitoring and Reporting", detail: "analyzing feedback to identify issues and improve product quality", icon: BarChart3 },
+    ],
+  },
+  {
+    id: 7,
     title: "Public Relations",
-    desc: "Earned media and narrative control that builds lasting authority.",
+    desc: "Strategic communication, media presence, and reputation management for long-term authority.",
     icon: Radio,
     color: "from-rose-600 to-pink-600",
     items: [
-      { name: "Press Releases", detail: "launch announcements, company news, campaign updates", icon: FileText },
-      { name: "Press Conferences", detail: "event planning, media coordination, brand messaging", icon: Users },
-      { name: "Media Outreach", detail: "media outreach and publication pitching", icon: Megaphone },
-      { name: "Reputation Building", detail: "trust building, credibility, and online authority", icon: Star },
+      { name: "Press Releases", detail: "launch announcements and news distribution", icon: Newspaper },
+      { name: "Press Conference", detail: "event messaging, media coordination, public announcements", icon: Users },
+      { name: "Media Outreach", detail: "publication pitching and journalist communication", icon: Megaphone },
+      { name: "Reputation Building", detail: "trust, credibility, and authority management", icon: Star },
+      { name: "Media Relations", detail: "ongoing relationships with media and publications", icon: Radio },
+      { name: "Crisis Management", detail: "response strategy and brand protection", icon: ShieldAlert },
+    ],
+  },
+  {
+    id: 8,
+    title: "Software Development & Management",
+    desc: "Modern software systems, websites, apps, integrations, and long-term technical support.",
+    icon: Code2,
+    color: "from-indigo-600 to-sky-500",
+    items: [
+      { name: "CRM", detail: "customer management workflows and sales pipelines", icon: Users },
+      { name: "ERP", detail: "business process and operations management systems", icon: MonitorCog },
+      { name: "Website Development", detail: "responsive websites, landing pages, and web apps", icon: Globe2 },
+      { name: "App Development", detail: "Android, iOS, and hybrid application development", icon: Smartphone },
+      { name: "API Development and Integration", detail: "custom APIs, third-party tools, payment gateways", icon: PlugZap },
+      { name: "Full Stack Development", detail: "frontend, backend, database, and deployment", icon: Code2 },
+      { name: "UI/UX Design", detail: "wireframes, prototypes, design systems, product flows", icon: Layers3 },
+      { name: "Support and Maintenance", detail: "bug fixes, updates, monitoring, and improvements", icon: LifeBuoy },
     ],
   },
 ];
@@ -109,53 +155,103 @@ export default function Services() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(".hero h1", {
-        y: 60,
+      gsap.from(".hero-badge", {
+        y: 18,
         opacity: 0,
-        duration: 1,
+        duration: 0.6,
+        ease: "power2.out",
+      });
+
+      gsap.from(".hero h1", {
+        y: 55,
+        opacity: 0,
+        duration: 0.9,
+        delay: 0.1,
         ease: "power3.out",
       });
 
       gsap.from(".hero p", {
-        y: 30,
+        y: 25,
         opacity: 0,
-        duration: 0.8,
-        delay: 0.2,
+        duration: 0.75,
+        delay: 0.25,
+        ease: "power2.out",
       });
 
       gsap.utils.toArray(".service-card").forEach((card, i) => {
+        const glow = card.querySelector(".card-glow");
+        const icon = card.querySelector(".main-icon");
+        const ring = card.querySelector(".svg-ring");
+        const line = card.querySelector(".svg-line");
+        const dots = card.querySelectorAll(".svg-dot");
+
         gsap.from(card, {
           scrollTrigger: {
             trigger: card,
-            start: "top 88%",
+            start: "top 86%",
           },
-          y: 48,
+          y: 56,
           opacity: 0,
-          duration: 0.7,
-          delay: i * 0.04,
+          scale: 0.96,
+          duration: 0.75,
+          delay: i * 0.035,
           ease: "power2.out",
         });
 
-        const glow = card.querySelector(".card-glow");
-
-        card.addEventListener("mouseenter", () => {
-          gsap.to(glow, { opacity: 0.28, duration: 0.25 });
+        gsap.to(ring, {
+          rotate: 360,
+          transformOrigin: "50% 50%",
+          duration: 18 + i,
+          repeat: -1,
+          ease: "none",
         });
 
-        card.addEventListener("mouseleave", () => {
+        gsap.fromTo(
+          line,
+          { strokeDashoffset: 260 },
+          {
+            strokeDashoffset: 0,
+            duration: 2.2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+          }
+        );
+
+        gsap.to(dots, {
+          scale: 1.35,
+          opacity: 0.3,
+          transformOrigin: "50% 50%",
+          duration: 1.1,
+          repeat: -1,
+          yoyo: true,
+          stagger: 0.18,
+          ease: "sine.inOut",
+        });
+
+        const enter = () => {
+          gsap.to(glow, { opacity: 0.32, duration: 0.25 });
+          gsap.to(icon, { scale: 1.08, rotate: 4, duration: 0.25, ease: "power2.out" });
+        };
+
+        const leave = () => {
           gsap.to(glow, { opacity: 0, duration: 0.25 });
-        });
+          gsap.to(icon, { scale: 1, rotate: 0, duration: 0.25, ease: "power2.out" });
+        };
+
+        card.addEventListener("mouseenter", enter);
+        card.addEventListener("mouseleave", leave);
       });
 
       gsap.utils.toArray(".service-item").forEach((item) => {
         gsap.from(item, {
           scrollTrigger: {
             trigger: item,
-            start: "top 92%",
+            start: "top 94%",
           },
-          x: -16,
+          x: -14,
           opacity: 0,
-          duration: 0.45,
+          duration: 0.42,
           ease: "power2.out",
         });
       });
@@ -167,81 +263,74 @@ export default function Services() {
   return (
     <div
       ref={root}
-      className="min-h-screen bg-[#fafafa] dark:bg-[#0a0a0f] text-zinc-900 dark:text-white overflow-hidden"
+      className="min-h-screen overflow-hidden bg-[#fafafa] text-zinc-900 dark:bg-[#0a0a0f] dark:text-white"
     >
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_0%,rgba(124,58,237,0.16),transparent_60%)]" />
       </div>
 
-      <section className="hero max-w-7xl mx-auto px-4 sm:px-6 pt-24 md:pt-28 pb-10 md:pb-14 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-700 dark:text-violet-300 text-xs font-semibold">
+      <section className="hero mx-auto max-w-7xl px-4 pb-10 pt-24 text-center sm:px-6 md:pb-14 md:pt-28">
+        <div className="hero-badge inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/10 px-3 py-1 text-xs font-semibold text-violet-700 dark:text-violet-300">
+          <span className="h-2 w-2 rounded-full bg-[#e81c7e]" />
           PREMIUM SERVICES
         </div>
 
-        <h1 className="mt-6 text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-tight">
+        <h1 className="mt-6 text-4xl font-black leading-tight tracking-normal sm:text-5xl lg:text-7xl">
           Our{" "}
           <span className="bg-gradient-to-r from-violet-600 to-pink-600 bg-clip-text text-transparent">
             Services
           </span>
         </h1>
 
-        <p className="mt-5 max-w-2xl mx-auto text-base sm:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-lg">
           A professional agency engineered for scale. We combine performance
-          marketing, iconic brand craft, and elite engineering.
+          marketing, brand craft, public relations, and software development.
         </p>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-20 md:pb-24">
-        <div className="columns-1 md:columns-2 xl:columns-3 gap-5 lg:gap-6 space-y-5 lg:space-y-6">
+      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 md:pb-24">
+        <div className="columns-1 gap-5 space-y-5 md:columns-2 lg:gap-6 lg:space-y-6 xl:columns-3">
           {services.map((s) => {
             const Icon = s.icon;
 
             return (
-              <article
-                key={s.id}
-                className="service-card group relative break-inside-avoid mb-5 lg:mb-6"
-              >
-                <div
-                  className={`card-glow absolute -inset-0.5 rounded-[1.5rem] bg-gradient-to-r ${s.color} opacity-0 blur-2xl transition-opacity`}
-                />
+              <article key={s.id} className="service-card group relative mb-5 break-inside-avoid lg:mb-6">
+                <div className={`card-glow absolute -inset-0.5 rounded-[1.5rem] bg-gradient-to-r ${s.color} opacity-0 blur-2xl transition-opacity`} />
 
-                <div className="relative bg-white/85 dark:bg-zinc-900/75 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[1.5rem] p-5 sm:p-6 lg:p-7 hover:-translate-y-1 transition-all duration-300 shadow-lg">
-                  <div
-                    className={`w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br ${s.color} p-[1.5px] mb-5`}
-                  >
-                    <div className="w-full h-full rounded-[0.9rem] bg-white dark:bg-zinc-900 grid place-items-center">
-                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-900 dark:text-white" />
+                <div className="relative overflow-hidden rounded-[1.5rem] border border-black/10 bg-white/85 p-5 shadow-lg backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 dark:border-white/10 dark:bg-zinc-900/75 sm:p-6 lg:p-7">
+                  <svg className="pointer-events-none absolute right-0 top-0 h-40 w-40 opacity-20" viewBox="0 0 180 180" fill="none" aria-hidden="true">
+                    <circle className="svg-ring" cx="90" cy="90" r="54" stroke="currentColor" strokeWidth="1.5" strokeDasharray="8 12" />
+                    <path className="svg-line" d="M24 112C48 56 92 148 156 62" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="260" />
+                    <circle className="svg-dot" cx="40" cy="46" r="5" fill="currentColor" />
+                    <circle className="svg-dot" cx="136" cy="132" r="6" fill="currentColor" />
+                    <circle className="svg-dot" cx="148" cy="44" r="4" fill="currentColor" />
+                  </svg>
+
+                  <div className={`main-icon relative mb-5 h-11 w-11 rounded-2xl bg-gradient-to-br ${s.color} p-[1.5px] sm:h-12 sm:w-12`}>
+                    <div className="grid h-full w-full place-items-center rounded-[0.9rem] bg-white dark:bg-zinc-900">
+                      <Icon className="h-5 w-5 text-zinc-900 dark:text-white sm:h-6 sm:w-6" />
                     </div>
                   </div>
 
-                  <h3 className="text-xl sm:text-2xl font-bold leading-tight">
-                    {s.title}
-                  </h3>
+                  <h3 className="relative text-xl font-bold leading-tight sm:text-2xl">{s.title}</h3>
 
-                  <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                    {s.desc}
-                  </p>
+                  <p className="relative mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{s.desc}</p>
 
-                  <div className="mt-5 space-y-2.5">
+                  <div className="relative mt-5 space-y-2.5">
                     {s.items.map((it) => {
                       const Ico = it.icon;
 
                       return (
-                        <div
-                          key={it.name}
-                          className="service-item flex items-start gap-3 rounded-xl p-2 -mx-2 transition group/item hover:bg-black/5 dark:hover:bg-white/5"
-                        >
-                          <div className="mt-0.5 shrink-0 p-1.5 rounded-lg bg-black/5 dark:bg-white/5 group-hover/item:bg-violet-500/15 transition">
-                            <Ico className="w-3.5 h-3.5 text-violet-600 dark:text-violet-400" />
+                        <div key={it.name} className="service-item group/item -mx-2 flex items-start gap-3 rounded-xl p-2 transition hover:bg-black/5 dark:hover:bg-white/5">
+                          <div className="mt-0.5 shrink-0 rounded-lg bg-black/5 p-1.5 transition group-hover/item:bg-violet-500/15 dark:bg-white/5">
+                            <Ico className="h-3.5 w-3.5 text-violet-600 dark:text-violet-400" />
                           </div>
 
                           <div className="min-w-0">
-                            <p className="text-sm font-semibold leading-snug break-words">
-                              {it.name}
-                            </p>
+                            <p className="break-words text-sm font-semibold leading-snug">{it.name}</p>
 
                             {it.detail && (
-                              <p className="text-xs text-zinc-500 dark:text-zinc-500 mt-0.5 leading-relaxed break-words">
+                              <p className="mt-0.5 break-words text-xs leading-relaxed text-zinc-500 dark:text-zinc-500">
                                 {it.detail}
                               </p>
                             )}
@@ -256,18 +345,19 @@ export default function Services() {
           })}
         </div>
 
-        <div className="mt-16 md:mt-20 text-center">
-          <div className="inline-block p-[1px] rounded-2xl bg-gradient-to-r from-violet-600 to-pink-600">
-            <div className="bg-[#fafafa] dark:bg-[#0a0a0f] rounded-2xl px-5 sm:px-8 py-6">
-              <h4 className="text-lg sm:text-xl font-bold">
-                Need a bespoke growth system?
+        <div className="mt-16 text-center md:mt-20">
+          <div className="inline-block rounded-2xl bg-gradient-to-r from-violet-600 to-pink-600 p-[1px]">
+            <div className="rounded-2xl bg-[#fafafa] px-5 py-6 dark:bg-[#0a0a0f] sm:px-8">
+              <h4 className="text-lg font-bold sm:text-xl">
+                Need a custom growth system?
               </h4>
 
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1 max-w-md">
-                We architect integrated playbooks across all 6 services.
+              <p className="mt-1 max-w-md text-sm text-zinc-600 dark:text-zinc-400">
+                We architect integrated playbooks across marketing, branding,
+                PR, and software development.
               </p>
 
-              <button className="mt-4 px-6 h-11 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-black font-semibold hover:scale-105 transition">
+              <button className="mt-4 h-11 rounded-xl bg-zinc-900 px-6 font-semibold text-white transition hover:scale-105 dark:bg-white dark:text-black">
                 Book Strategy Call
               </button>
             </div>
